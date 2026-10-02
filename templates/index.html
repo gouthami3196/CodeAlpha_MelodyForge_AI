@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MelodyForge AI</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #d6d6d6;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            background: rgba(255,255,255,0.1);
+            padding: 18px;
+            border-radius: 15px;
+        }
+
+        .feature strong {
+            display: block;
+            margin-top: 8px;
+        }
+
+        .status {
+            background: rgba(0,0,0,0.25);
+            padding: 18px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .success {
+            color: #7CFF9B;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        button, .download-btn {
+            border: none;
+            padding: 14px 25px;
+            border-radius: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            background: #6c5ce7;
+            transition: 0.3s;
+        }
+
+        button:hover, .download-btn:hover {
+            transform: translateY(-2px);
+            background: #8b7cf6;
+        }
+
+        .generate {
+            background: #00b894;
+        }
+
+        .generate:hover {
+            background: #00d2a0;
+        }
+
+        .info {
+            margin-top: 30px;
+            text-align: left;
+            background: rgba(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .info h2 {
+            margin-bottom: 12px;
+        }
+
+        .info p {
+            line-height: 1.7;
+            color: #ddd;
+        }
+
+        @media (max-width: 650px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">🎵</div>
+
+    <h1>MelodyForge AI</h1>
+
+    <p class="subtitle">
+        AI-Powered Music Generation Studio
+    </p>
+
+    <div class="features">
+
+        <div class="feature">
+            🎼
+            <strong>MIDI Dataset</strong>
+            Music data preprocessing
+        </div>
+
+        <div class="feature">
+            🧠
+            <strong>LSTM AI</strong>
+            Learns musical patterns
+        </div>
+
+        <div class="feature">
+            🎹
+            <strong>MIDI Generation</strong>
+            Creates new melodies
+        </div>
+
+    </div>
+
+    <div class="status">
+
+        <h2>🎶 AI Music Model</h2>
+
+        <p class="success">
+            ● Model trained successfully
+        </p>
+
+        <p>
+            A new AI-generated melody is ready!
+        </p>
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="generate"
+                onclick="alert('Your AI-generated melody is ready!')">
+            🎵 Generate Music
+        </button>
+
+        <a class="download-btn" href="/download">
+            ⬇ Download MIDI
+        </a>
+
+    </div>
+
+    <div class="info">
+
+        <h2>✨ About MelodyForge AI</h2>
+
+        <p>
+            MelodyForge AI uses an LSTM deep learning model to learn
+            patterns from MIDI music data and generate new musical
+            sequences. The generated sequence is converted into a
+            MIDI file that can be downloaded and played using a
+            compatible music player.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

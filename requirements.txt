@@ -1,0 +1,5 @@
+tensorflow
+music21
+flask
+numpy
+matplotlib
